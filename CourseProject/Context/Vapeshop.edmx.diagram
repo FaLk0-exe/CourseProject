@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ba93951826be4436834ae4d1fb9b8034" Name="Diagram1">
+        <EntityTypeShape EntityType="vapeshopModel.contact_type" Width="1.5" PointX="1.5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.customer" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.customer_order" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.employee" Width="1.5" PointX="3.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.manufacturer" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.order_details" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.person" Width="1.5" PointX="1.5" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.person_contact" Width="1.5" PointX="3.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.product" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.product_amount" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="vapeshopModel.product_category" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="vapeshopModel.FK_person_contact_contact_type" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_customer_customer_order" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_customer_person" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_order_details_customer_order" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_employee_person" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_product_manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_order_details_product" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_person_contact_person" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_product_amount_product" ManuallyRouted="false" />
+        <AssociationConnector Association="vapeshopModel.FK_product_product_category" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
