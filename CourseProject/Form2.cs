@@ -1,10 +1,10 @@
-﻿using CourseProject.Context;
-using CourseProject.CustomForms;
+﻿using CourseProject.CustomForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -18,11 +18,12 @@ namespace CourseProject
         public Form2()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
-        private void authorizationButton_Click(object sender, EventArgs e)
+        private void Authorize()
         {
-            using (Vapeshop vp = new Vapeshop())
+            using (VapeshopContext vp = new VapeshopContext())
             {
                 var employeers = vp.
                     employee.
@@ -32,7 +33,8 @@ namespace CourseProject
                     if (employeers.First().login == "admin")
                     {
                         AdminForm f = new AdminForm();
-                        f.ShowDialog();
+                        f.Show();
+                        this.Hide();
                     }
                 }
                 else
@@ -43,9 +45,22 @@ namespace CourseProject
             }
         }
 
-        private void Form2_Load_1(object sender, EventArgs e)
+        private void authorizationButton_Click(object sender, EventArgs e)
+        {
+            Authorize();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar==13)
+            {
+                Authorize();
+            }
         }
     }
 }

@@ -154,7 +154,8 @@ namespace CourseProject
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизація";
-            this.Load += new System.EventHandler(this.Form2_Load_1);
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form2_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

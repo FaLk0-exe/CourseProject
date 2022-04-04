@@ -116,9 +116,11 @@ namespace CourseProject
             this.Controls.Add(this.codeTextBox);
             this.Controls.Add(this.authorizationButton);
             this.Name = "AdminForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminForm_FormClosed);
             this.Load += new System.EventHandler(this.AdminForm_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AdminForm_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

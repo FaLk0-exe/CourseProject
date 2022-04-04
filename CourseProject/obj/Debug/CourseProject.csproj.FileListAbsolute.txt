@@ -17,7 +17,7 @@ C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\ru\EntityFrame
 C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.Form2.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.AdminForm.resources
-C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\slib.dll
-C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\slib.pdb
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.custom_form.AdminMenuForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.CustomForms.CustomForm.resources
+C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\VapeshopDB.mdf
+C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\VapeshopDB_log.ldf

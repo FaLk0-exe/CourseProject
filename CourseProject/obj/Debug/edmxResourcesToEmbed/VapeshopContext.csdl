@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="vapeshopContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="VapeshopDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="contact_type">
     <Key>
       <PropertyRef Name="id" />
@@ -13,7 +13,7 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="customer_id" Type="Int32" Nullable="false" />
+    <Property Name="person_id" Type="Int32" Nullable="false" />
     <Property Name="bonus_points" Type="Int32" />
     <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
@@ -36,7 +36,6 @@
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" />
     <Property Name="person_id" Type="Int32" Nullable="false" />
-    <Property Name="passport_code" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="person" Relationship="Self.FK_employee_person" FromRole="employee" ToRole="person" />
@@ -149,12 +148,14 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="customer">
-        <PropertyRef Name="customer_id" />
+        <PropertyRef Name="person_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_order_details_customer_order">
-    <End Role="customer_order" Type="Self.customer_order" Multiplicity="1" />
+    <End Role="customer_order" Type="Self.customer_order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="order_details" Type="Self.order_details" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="customer_order">
@@ -237,7 +238,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Vapeshop" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="VapeshopContext" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="contact_type" EntityType="Self.contact_type" />
     <EntitySet Name="customer" EntityType="Self.customer" />
     <EntitySet Name="customer_order" EntityType="Self.customer_order" />

@@ -17,26 +17,26 @@ CONSTRAINT PK_person PRIMARY KEY(id)
 
 CREATE TABLE customer(
 id INT NOT NULL UNIQUE,
-customer_id INT NOT NULL,
+person_id INT NOT NULL,
 bonus_points INT DEFAULT 0,
 [login] VARCHAR(20) NOT NULL
 CHECK(LEN([login])>=5 and LEN([login])<=20),
 [password] VARCHAR(15) NOT NULL
 CHECK(LEN([password])>=6 and LEN([password])<=15),
 CONSTRAINT PK_customer PRIMARY KEY(id),
-CONSTRAINT FK_customer_person FOREIGN KEY (customer_id)
+CONSTRAINT FK_customer_person FOREIGN KEY (person_id)
 REFERENCES person(id)
 );
 
 CREATE TABLE employee(
 id INT NOT NULL UNIQUE,
-employee_id INT NOT NULL,
+person_id INT NOT NULL,
 [login] VARCHAR(20) NOT NULL
 CHECK(LEN([login])>=5 and LEN([login])<=20),
 [password] VARCHAR(15) NOT NULL
 CHECK(LEN([password])>=6 and LEN([password])<=15),
 CONSTRAINT PK_employee PRIMARY KEY(id),
-CONSTRAINT FK_employee_person FOREIGN KEY (employee_id)
+CONSTRAINT FK_employee_person FOREIGN KEY (person_id)
 REFERENCES person(id),
 );
 

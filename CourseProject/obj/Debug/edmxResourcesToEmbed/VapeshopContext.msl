@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище vapeshopContextContainer" CdmEntityContainer="Vapeshop">
+  <EntityContainerMapping StorageEntityContainer="Хранилище VapeshopDBModelContainer" CdmEntityContainer="VapeshopContext">
     <EntitySetMapping Name="contact_type">
-      <EntityTypeMapping TypeName="vapeshopContext.contact_type">
+      <EntityTypeMapping TypeName="VapeshopDBModel.contact_type">
         <MappingFragment StoreEntitySet="contact_type">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
@@ -10,10 +10,10 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="customer">
-      <EntityTypeMapping TypeName="vapeshopContext.customer">
+      <EntityTypeMapping TypeName="VapeshopDBModel.customer">
         <MappingFragment StoreEntitySet="customer">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="person_id" ColumnName="person_id" />
           <ScalarProperty Name="bonus_points" ColumnName="bonus_points" />
           <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="password" ColumnName="password" />
@@ -21,7 +21,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="customer_order">
-      <EntityTypeMapping TypeName="vapeshopContext.customer_order">
+      <EntityTypeMapping TypeName="VapeshopDBModel.customer_order">
         <MappingFragment StoreEntitySet="customer_order">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="operation_time" ColumnName="operation_time" />
@@ -30,18 +30,17 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="employee">
-      <EntityTypeMapping TypeName="vapeshopContext.employee">
+      <EntityTypeMapping TypeName="VapeshopDBModel.employee">
         <MappingFragment StoreEntitySet="employee">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="person_id" ColumnName="person_id" />
-          <ScalarProperty Name="passport_code" ColumnName="passport_code" />
           <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="password" ColumnName="password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="manufacturer">
-      <EntityTypeMapping TypeName="vapeshopContext.manufacturer">
+      <EntityTypeMapping TypeName="VapeshopDBModel.manufacturer">
         <MappingFragment StoreEntitySet="manufacturer">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
@@ -49,7 +48,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="order_details">
-      <EntityTypeMapping TypeName="vapeshopContext.order_details">
+      <EntityTypeMapping TypeName="VapeshopDBModel.order_details">
         <MappingFragment StoreEntitySet="order_details">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="customer_order_id" ColumnName="customer_order_id" />
@@ -61,7 +60,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="person">
-      <EntityTypeMapping TypeName="vapeshopContext.person">
+      <EntityTypeMapping TypeName="VapeshopDBModel.person">
         <MappingFragment StoreEntitySet="person">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="first_name" ColumnName="first_name" />
@@ -72,7 +71,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="person_contact">
-      <EntityTypeMapping TypeName="vapeshopContext.person_contact">
+      <EntityTypeMapping TypeName="VapeshopDBModel.person_contact">
         <MappingFragment StoreEntitySet="person_contact">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="contact_type_id" ColumnName="contact_type_id" />
@@ -82,7 +81,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="product">
-      <EntityTypeMapping TypeName="vapeshopContext.product">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product">
         <MappingFragment StoreEntitySet="product">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="product_category_id" ColumnName="product_category_id" />
@@ -93,7 +92,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="product_amount">
-      <EntityTypeMapping TypeName="vapeshopContext.product_amount">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product_amount">
         <MappingFragment StoreEntitySet="product_amount">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="product_id" ColumnName="product_id" />
@@ -102,7 +101,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="product_category">
-      <EntityTypeMapping TypeName="vapeshopContext.product_category">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product_category">
         <MappingFragment StoreEntitySet="product_category">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Хранилище vapeshopContext" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Хранилище VapeshopDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="contact_type">
     <Key>
       <PropertyRef Name="id" />
@@ -12,7 +12,7 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="customer_id" Type="int" Nullable="false" />
+    <Property Name="person_id" Type="int" Nullable="false" />
     <Property Name="bonus_points" Type="int" />
     <Property Name="login" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="password" Type="varchar" MaxLength="15" Nullable="false" />
@@ -31,7 +31,6 @@
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
     <Property Name="person_id" Type="int" Nullable="false" />
-    <Property Name="passport_code" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="login" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="password" Type="varchar" MaxLength="15" Nullable="false" />
   </EntityType>
@@ -117,7 +116,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="customer">
-        <PropertyRef Name="customer_id" />
+        <PropertyRef Name="person_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -134,7 +133,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_order_details_customer_order">
-    <End Role="customer_order" Type="Self.customer_order" Multiplicity="1" />
+    <End Role="customer_order" Type="Self.customer_order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="order_details" Type="Self.order_details" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="customer_order">
@@ -217,7 +218,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="Хранилище vapeshopContextContainer">
+  <EntityContainer Name="Хранилище VapeshopDBModelContainer">
     <EntitySet Name="contact_type" EntityType="Self.contact_type" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="customer" EntityType="Self.customer" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="customer_order" EntityType="Self.customer_order" Schema="dbo" store:Type="Tables" />
