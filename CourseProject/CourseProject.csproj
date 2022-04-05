@@ -226,9 +226,7 @@
     </Content>
     <None Include="Resources\Снимок.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Context\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>

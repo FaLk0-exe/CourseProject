@@ -1,0 +1,11 @@
+﻿        <h1>Продукти</h1>
+        <h3>@Model.CurrCategory</h3>
+        @{
+            foreach (var product in Model.GetGoods)
+            {
+            <div>
+                <p>@product.comment</p>
+                <p>Ціна:@product.price.ToString()</p>
+            </div>
+             }
+         }
