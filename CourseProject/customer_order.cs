@@ -23,8 +23,10 @@ namespace CourseProject
         public int id { get; set; }
         public Nullable<System.DateTime> operation_time { get; set; }
         public int customer_id { get; set; }
+        public int order_status_id { get; set; }
     
         public virtual customer customer { get; set; }
+        public virtual order_status order_status { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<order_details> order_details { get; set; }
     }

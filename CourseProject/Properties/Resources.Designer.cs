@@ -63,6 +63,36 @@ namespace CourseProject.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit_11_16 {
+            get {
+                object obj = ResourceManager.GetObject("edit-11-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_check_mark_checkbox_clip_art_yes_5ac17c66504f38_134743801522629734329 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-check-mark-checkbox-clip-art-yes-5ac17c66504f38.134743801522629734329", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon minus {
+            get {
+                object obj = ResourceManager.GetObject("minus", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Снимок {
             get {
                 object obj = ResourceManager.GetObject("Снимок", resourceCulture);

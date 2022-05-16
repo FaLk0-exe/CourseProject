@@ -88,6 +88,7 @@
           <ScalarProperty Name="manufacturer_id" ColumnName="manufacturer_id" />
           <ScalarProperty Name="price" ColumnName="price" />
           <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="name" ColumnName="name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -105,6 +106,18 @@
         <MappingFragment StoreEntitySet="product_category">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductView">
+      <EntityTypeMapping TypeName="VapeshopDBModel.ProductView">
+        <MappingFragment StoreEntitySet="ProductView">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="product_amount_value" ColumnName="product_amount_value" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

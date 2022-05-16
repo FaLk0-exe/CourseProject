@@ -26,6 +26,7 @@ namespace CourseProject
         public int manufacturer_id { get; set; }
         public Nullable<decimal> price { get; set; }
         public string comment { get; set; }
+        public string name { get; set; }
     
         public virtual manufacturer manufacturer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

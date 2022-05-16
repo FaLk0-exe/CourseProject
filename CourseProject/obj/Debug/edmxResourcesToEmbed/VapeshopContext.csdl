@@ -94,6 +94,7 @@
     <Property Name="manufacturer_id" Type="Int32" Nullable="false" />
     <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="comment" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="manufacturer" Relationship="Self.FK_product_manufacturer" FromRole="product" ToRole="manufacturer" />
     <NavigationProperty Name="order_details" Relationship="Self.FK_order_details_product" FromRole="product" ToRole="order_details" />
     <NavigationProperty Name="product_amount" Relationship="Self.FK_product_amount_product" FromRole="product" ToRole="product_amount" />
@@ -115,6 +116,18 @@
     <Property Name="id" Type="Int32" Nullable="false" />
     <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="product" Relationship="Self.FK_product_product_category" FromRole="product_category" ToRole="product" />
+  </EntityType>
+  <EntityType Name="ProductView">
+    <Key>
+      <PropertyRef Name="Category" />
+      <PropertyRef Name="Manufacturer" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Category" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Manufacturer" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="comment" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="product_amount_value" Type="Int32" />
   </EntityType>
   <Association Name="FK_person_contact_contact_type">
     <End Role="contact_type" Type="Self.contact_type" Multiplicity="1" />
@@ -250,6 +263,7 @@
     <EntitySet Name="product" EntityType="Self.product" />
     <EntitySet Name="product_amount" EntityType="Self.product_amount" />
     <EntitySet Name="product_category" EntityType="Self.product_category" />
+    <EntitySet Name="ProductView" EntityType="Self.ProductView" />
     <AssociationSet Name="FK_person_contact_contact_type" Association="Self.FK_person_contact_contact_type">
       <End Role="contact_type" EntitySet="contact_type" />
       <End Role="person_contact" EntitySet="person_contact" />

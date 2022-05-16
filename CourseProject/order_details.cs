@@ -17,8 +17,6 @@ namespace CourseProject
         public int id { get; set; }
         public int customer_order_id { get; set; }
         public int product_id { get; set; }
-        public decimal price { get; set; }
-        public decimal price_with_discount { get; set; }
         public Nullable<int> product_amount { get; set; }
     
         public virtual customer_order customer_order { get; set; }

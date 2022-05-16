@@ -73,11 +73,11 @@ namespace CourseProject
             this.codeTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.codeTextBox.FocusedLineColor = System.Drawing.Color.DarkOrchid;
             this.codeTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.codeTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.codeTextBox.ForeColor = System.Drawing.Color.DarkOrchid;
             this.codeTextBox.LineColor = System.Drawing.Color.Gainsboro;
             this.codeTextBox.Location = new System.Drawing.Point(91, 70);
             this.codeTextBox.Name = "codeTextBox";
-            this.codeTextBox.PasswordChar = '\0';
+            this.codeTextBox.PasswordChar = '*';
             this.codeTextBox.SelectedText = "";
             this.codeTextBox.Size = new System.Drawing.Size(160, 26);
             this.codeTextBox.TabIndex = 3;

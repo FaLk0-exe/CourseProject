@@ -21,13 +21,11 @@ namespace CourseProject
         }
     
         public int id { get; set; }
-        public int person_id { get; set; }
-        public Nullable<int> bonus_points { get; set; }
-        public string login { get; set; }
-        public string password { get; set; }
+        public string phone_number { get; set; }
+        public string initials { get; set; }
+        public string address { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<customer_order> customer_order { get; set; }
-        public virtual person person { get; set; }
     }
 }

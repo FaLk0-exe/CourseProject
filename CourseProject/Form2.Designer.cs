@@ -51,11 +51,11 @@ namespace CourseProject
             this.authorizationButton.BorderSize = 3;
             this.authorizationButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.authorizationButton.FocusedColor = System.Drawing.Color.Empty;
-            this.authorizationButton.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.authorizationButton.Font = new System.Drawing.Font("Open Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.authorizationButton.ForeColor = System.Drawing.Color.White;
             this.authorizationButton.Image = null;
             this.authorizationButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.authorizationButton.Location = new System.Drawing.Point(69, 317);
+            this.authorizationButton.Location = new System.Drawing.Point(60, 309);
             this.authorizationButton.Name = "authorizationButton";
             this.authorizationButton.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.authorizationButton.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -65,7 +65,6 @@ namespace CourseProject
             this.authorizationButton.OnPressedColor = System.Drawing.Color.PaleVioletRed;
             this.authorizationButton.Size = new System.Drawing.Size(116, 43);
             this.authorizationButton.TabIndex = 0;
-            this.authorizationButton.Text = "Увійти";
             this.authorizationButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.authorizationButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.authorizationButton.Click += new System.EventHandler(this.authorizationButton_Click);
@@ -103,22 +102,22 @@ namespace CourseProject
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.DarkOrchid;
             this.gunaLabel1.Location = new System.Drawing.Point(93, 134);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(62, 18);
+            this.gunaLabel1.Size = new System.Drawing.Size(58, 20);
             this.gunaLabel1.TabIndex = 4;
             this.gunaLabel1.Text = "  Логін";
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.DarkOrchid;
             this.gunaLabel2.Location = new System.Drawing.Point(76, 225);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(85, 18);
+            this.gunaLabel2.Size = new System.Drawing.Size(81, 20);
             this.gunaLabel2.TabIndex = 5;
             this.gunaLabel2.Text = "    Пароль";
             this.gunaLabel2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
@@ -153,7 +152,6 @@ namespace CourseProject
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Авторизація";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form2_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();

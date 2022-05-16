@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CourseProject.custom_form;
+using System;
 using System.Windows.Forms;
 
 namespace CourseProject
@@ -10,7 +11,7 @@ namespace CourseProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new AdminMenuForm());
         }
     }
 }

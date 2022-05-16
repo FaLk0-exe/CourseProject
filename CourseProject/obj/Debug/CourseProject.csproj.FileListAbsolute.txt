@@ -13,11 +13,13 @@ C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.exe
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
 C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\Guna.UI.dll
-C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\ru\EntityFramework.resources.dll
-C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.Form2.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.AdminForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.custom_form.AdminMenuForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.CustomForms.CustomForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\VapeshopDB.mdf
 C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\VapeshopDB_log.ldf
+C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.OrderForm.resources
+C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.OrderListForm.resources
+C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.ProductForm.resources
+C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.SetStatusForm.resources

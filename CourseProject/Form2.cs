@@ -23,14 +23,20 @@ namespace CourseProject
 
         private void Authorize()
         {
-            using (VapeshopContext vp = new VapeshopContext())
+            using (VP vp = new VP())
             {
-                var employeers = vp.
-                    employee.
-                    Where(l => l.login == loginTextBox.Text && l.password == passwordTextBox.Text);
-                if (employeers.Count() != 0)
+                var user = vp.
+                    user.
+                    FirstOrDefault(l => l.login == loginTextBox.Text && l.password == passwordTextBox.Text);
+                if (user != null)
                 {
-                    if (employeers.First().login == "admin")
+                    if (user.login == "admin")
+                    {
+                        AdminForm f = new AdminForm();
+                        f.Show();
+                        this.Hide();
+                    }
+                    else
                     {
                         AdminForm f = new AdminForm();
                         f.Show();

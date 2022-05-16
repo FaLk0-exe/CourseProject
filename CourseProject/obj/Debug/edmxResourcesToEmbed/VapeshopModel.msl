@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище VapeshopDBModelContainer" CdmEntityContainer="VP">
+    <EntitySetMapping Name="customer">
+      <EntityTypeMapping TypeName="VapeshopDBModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="initials" ColumnName="initials" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customer_order">
+      <EntityTypeMapping TypeName="VapeshopDBModel.customer_order">
+        <MappingFragment StoreEntitySet="customer_order">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operation_time" ColumnName="operation_time" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="order_status_id" ColumnName="order_status_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manufacturer">
+      <EntityTypeMapping TypeName="VapeshopDBModel.manufacturer">
+        <MappingFragment StoreEntitySet="manufacturer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="order_details">
+      <EntityTypeMapping TypeName="VapeshopDBModel.order_details">
+        <MappingFragment StoreEntitySet="order_details">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="customer_order_id" ColumnName="customer_order_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_amount" ColumnName="product_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="order_status">
+      <EntityTypeMapping TypeName="VapeshopDBModel.order_status">
+        <MappingFragment StoreEntitySet="order_status">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product">
+        <MappingFragment StoreEntitySet="product">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_category_id" ColumnName="product_category_id" />
+          <ScalarProperty Name="manufacturer_id" ColumnName="manufacturer_id" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product_amount">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product_amount">
+        <MappingFragment StoreEntitySet="product_amount">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_amount_value" ColumnName="product_amount_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product_category">
+      <EntityTypeMapping TypeName="VapeshopDBModel.product_category">
+        <MappingFragment StoreEntitySet="product_category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="VapeshopDBModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="initials" ColumnName="initials" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
