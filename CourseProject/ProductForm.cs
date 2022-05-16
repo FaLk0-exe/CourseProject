@@ -150,5 +150,10 @@ namespace CourseProject
                 row = e.RowIndex;
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CourseProject.CustomForms;
+﻿using CourseProject.custom_form;
+using CourseProject.CustomForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,18 +31,11 @@ namespace CourseProject
                     FirstOrDefault(l => l.login == loginTextBox.Text && l.password == passwordTextBox.Text);
                 if (user != null)
                 {
-                    if (user.login == "admin")
-                    {
-                        AdminForm f = new AdminForm();
+                 
+                        AdminMenuForm f = new AdminMenuForm(user.login);
                         f.Show();
                         this.Hide();
-                    }
-                    else
-                    {
-                        AdminForm f = new AdminForm();
-                        f.Show();
-                        this.Hide();
-                    }
+                   
                 }
                 else
                 {

@@ -11,7 +11,7 @@ namespace CourseProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminMenuForm());
+            Application.Run(new AdminMenuForm("aprox512"));
         }
     }
 }

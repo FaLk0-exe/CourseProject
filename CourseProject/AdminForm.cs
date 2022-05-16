@@ -20,9 +20,9 @@ namespace CourseProject
                 MessageBox.Show("Неправильно введений код доступу!");
                 ClearTextBoxes();
             }
-            AdminMenuForm f = new AdminMenuForm();
-            f.Show();
-            this.Hide();
+          //  AdminMenuForm f = new AdminMenuForm();
+          //  f.Show();
+          //  this.Hide();
         }
 
         private void authorizationButton_Click(object sender, EventArgs e)

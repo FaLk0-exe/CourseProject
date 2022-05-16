@@ -127,5 +127,10 @@ namespace CourseProject
         {
             WinMethods.OpenSkype(textBox2.Text);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

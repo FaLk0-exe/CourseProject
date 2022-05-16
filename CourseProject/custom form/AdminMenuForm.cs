@@ -18,10 +18,11 @@ namespace CourseProject.custom_form
         List<dynamic> orders = new List<dynamic>();
         bool isOrderedByAsc=true;
         int? lastColumn;
-        public AdminMenuForm()
+        public AdminMenuForm(string login)
         {
             InitializeComponent();
             this.tabControl1.DrawItem += tabControl1_DrawItem_1;
+            label4.Text += login;
         }
 
         void LoadOrders(List<dynamic> orders)
@@ -31,7 +32,7 @@ namespace CourseProject.custom_form
             {
                 foreach(var o in orders)
                 {
-                    dataGridView1.Rows.Add(o.OrderCode, o.CustomerPhone, o.OperationTime, o.OrderStatus);
+                    dataGridView1.Rows.Add(o.OrderCode.ToString().PadLeft(6,'0'), o.CustomerPhone, o.OperationTime, o.OrderStatus);
                 }
             }
         }
@@ -44,7 +45,7 @@ namespace CourseProject.custom_form
         private void MenuFormPrototype_Load(object sender, EventArgs e)
         {
             dataGridView1.EnableHeadersVisualStyles=false;
-            dataGridView1.DefaultCellStyle.ForeColor = Color.DarkOrchid;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
             orders = ERMRepository.GetDynamicOrders();
             LoadOrders();
         }
@@ -54,23 +55,6 @@ namespace CourseProject.custom_form
 
         private void tabControl1_DrawItem_1(object sender, DrawItemEventArgs e)
         {
-
-            TabControl tabControl = sender as TabControl;
-
-            if (e.Index == tabControl.SelectedIndex)
-            {
-                e.Graphics.DrawString(tabControl.TabPages[e.Index].Text,
-                    new Font(tabControl.Font, FontStyle.Bold),
-                    Brushes.Black,
-                    new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
-            }
-            else
-            {
-                e.Graphics.DrawString(tabControl.TabPages[e.Index].Text,
-                    tabControl.Font,
-                    Brushes.Black,
-                    new PointF(e.Bounds.X + 3, e.Bounds.Y + 3));
-            }
 
         }
 
@@ -166,6 +150,33 @@ namespace CourseProject.custom_form
         {
             orders = ERMRepository.GetDynamicOrders();
             LoadOrders();
+        }
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form2 f = new Form2();
+            f.Show();
+            Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
