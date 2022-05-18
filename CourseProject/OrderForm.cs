@@ -1,4 +1,5 @@
 ﻿using CourseProject.custom_form;
+using FastReport;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -119,8 +120,15 @@ namespace CourseProject
 
         private void gunaGradientButton2_Click(object sender, EventArgs e)
         {
-            SetStatusForm f = new SetStatusForm(order);
-            f.ShowDialog();
+            if (order.order_details.Count != 0)
+            {
+                SetStatusForm f = new SetStatusForm(order);
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Ви не можете змінити статус замовлення для пустого списку!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void gunaGradientButton4_Click(object sender, EventArgs e)
@@ -131,6 +139,31 @@ namespace CourseProject
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void gunaGradientButton3_Click(object sender, EventArgs e)
+        {
+            decimal sum = 0;
+            Report f = Report.FromFile("Check.frx");
+            List<ReportModel> models = new List<ReportModel>();
+            foreach(DataGridViewRow r in dataGridView1.Rows)
+            {
+                models.Add(new ReportModel { name = r.Cells[0].Value.ToString(),
+                    count =Convert.ToInt32(r.Cells[3].Value.ToString()),
+                    price = r.Cells[2].Value.ToString()});
+            }
+            foreach(var n in models)
+            {
+                sum += n.count * Convert.ToDecimal(n.fullPrice);
+            }
+            
+            f.RegisterData(models,"models");
+            f.SetParameterValue("ID", order.id.ToString().PadLeft(6, '0'));
+            f.SetParameterValue("adress", order.customer.address);
+            f.SetParameterValue("phone", order.customer.phone_number);
+            f.SetParameterValue("fio", order.customer.initials);
+            f.SetParameterValue("sum", string.Format("{0:0.00}", sum));
+            f.Show();
         }
     }
 }

@@ -21,7 +21,6 @@ namespace CourseProject.custom_form
         public AdminMenuForm(string login)
         {
             InitializeComponent();
-            this.tabControl1.DrawItem += tabControl1_DrawItem_1;
             label4.Text += login;
         }
 

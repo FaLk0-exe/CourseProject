@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/18/2022 13:42:39" ReportInfo.Modified="05/18/2022 14:43:15" ReportInfo.CreatorVersion="2013.2.3.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="models" ReferenceName="models" DataType="System.Collections.Generic.List`1[[CourseProject.ReportModel, CourseProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="name" DataType="System.String"/>
+      <Column Name="count" DataType="System.Int32"/>
+      <Column Name="price" DataType="System.String"/>
+      <Column Name="fullPrice" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <Parameter Name="ID" DataType="System.String"/>
+    <Parameter Name="adress" DataType="System.String"/>
+    <Parameter Name="phone" DataType="System.String"/>
+    <Parameter Name="fio" DataType="System.String"/>
+    <Parameter Name="sum" DataType="System.String"/>
+    <Total Name="Total" TotalType="Count" Evaluator="Data1"/>
+    <Total Name="Total1" Evaluator="Data1"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="332.75">
+      <TextObject Name="Text2" Left="37.8" Top="66.15" Width="614.25" Height="18.9" Text="Видаткова накладна № [ID] від [Date]                                                       " VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text3" Left="37.8" Top="85.05" Width="661.5" Height="18.9" Border.Lines="Bottom" Text="(Продаж покупцю)" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <PictureObject Name="Picture1" Left="585.9" Top="9.45" Width="113.4" Height="75.6" Image="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"/>
+      <TableObject Name="Table2" Left="37.8" Top="132.3" Width="614.36" Height="200.45">
+        <TableColumn Name="Column6" Width="109.62"/>
+        <TableColumn Name="Column7" Width="208.9"/>
+        <TableColumn Name="Column8" Width="1"/>
+        <TableColumn Name="Column9" Width="90.72"/>
+        <TableColumn Name="Column10" Width="204.12"/>
+        <TableRow Name="Row8">
+          <TableCell Name="Cell36" Text="Постачальник" Font="Arial, 10pt, style=Bold" RowSpan="2"/>
+          <TableCell Name="Cell37" Text="ФОП Циганок Семен Петрович ІПН 35496017777, ДРФО 3549601777, р/р&#13;&#10;UA71351530000026005052175457 у банку ХАРКІВСЬКИЙ ГРУ АТ КБ &quot;ПРИВАТБАНК&quot;,&#13;&#10; тел.: +38(066)668-76-60 +38(063)668-76-60 +38(096)668-76-60,&#13;&#10;Не є платником податку на прибуток на загальних підставах&#13;&#10;&#13;&#10;0000000023" Font="Arial, 10pt, style=Bold" TabWidth="70" ColSpan="4" RowSpan="2"/>
+          <TableCell Name="Cell38"/>
+          <TableCell Name="Cell39"/>
+          <TableCell Name="Cell40"/>
+        </TableRow>
+        <TableRow Name="Row9" Height="75.6">
+          <TableCell Name="Cell41"/>
+          <TableCell Name="Cell42"/>
+          <TableCell Name="Cell43"/>
+          <TableCell Name="Cell44"/>
+          <TableCell Name="Cell45"/>
+        </TableRow>
+        <TableRow Name="Row10" Height="28.35">
+          <TableCell Name="Cell46" Text="Покупець" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell47" Text="[fio]" Font="Arial, 10pt, style=Bold" ColSpan="4"/>
+          <TableCell Name="Cell48" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell49" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell50" Font="Arial, 10pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row11" Height="1">
+          <TableCell Name="Cell51" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell52"/>
+          <TableCell Name="Cell53"/>
+          <TableCell Name="Cell54"/>
+          <TableCell Name="Cell55"/>
+        </TableRow>
+        <TableRow Name="Row12" Height="1">
+          <TableCell Name="Cell56" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell57" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell58" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell59"/>
+          <TableCell Name="Cell60"/>
+        </TableRow>
+        <TableRow Name="Row13" Height="37.8">
+          <TableCell Name="Cell61" Text="Адреса доставки" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell62" Text="[adress]" Font="Arial, 10pt, style=Bold" ColSpan="4"/>
+          <TableCell Name="Cell63" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell64"/>
+          <TableCell Name="Cell65"/>
+        </TableRow>
+        <TableRow Name="Row14" Height="37.8">
+          <TableCell Name="Cell66" Text="Номер телефону" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell67" Text="[phone]" Font="Arial, 10pt, style=Bold" ColSpan="4"/>
+          <TableCell Name="Cell68" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell69"/>
+          <TableCell Name="Cell70"/>
+        </TableRow>
+      </TableObject>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="336.75" Width="718.2" Height="37.8">
+      <TextObject Name="Text4" Left="37.8" Width="330.75" Height="37.8" Border.Lines="All" Text="Товари(Послуги)" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text8" Left="463.05" Width="94.5" Height="37.8" Border.Lines="All" Text="Ціна, грн" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text10" Left="557.55" Width="94.5" Height="37.8" Border.Lines="All" Text="Сума, грн" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="368.55" Width="94.5" Height="37.8" Border.Lines="All" Text="Кількість, шт" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="378.55" Width="718.2" Height="28.35" DataSource="models">
+      <TextObject Name="Text5" Left="368.55" Width="94.5" Height="28.35" Border.Lines="All" Text="[models.count]" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text7" Left="463.05" Width="94.5" Height="28.35" Border.Lines="All" Text="[models.price]" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text9" Left="557.55" Width="94.5" Height="28.35" Border.Lines="All" Text="[models.fullPrice]" HorzAlign="Right" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text1" Left="37.8" Width="330.75" Height="28.35" Border.Lines="All" Text="[models.name]" Font="Arial, 8pt, style=Bold"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="410.9" Width="718.2" Height="283.5">
+      <TextObject Name="Text11" Left="37.8" Top="85.05" Width="661.5" Height="18.9" Border.Lines="Bottom" Text="Всього найменувань [Total], на суму [sum] грн" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <TableObject Name="Table1" Left="415.8" Top="9.45" Width="226.8" Height="58.7">
+        <TableColumn Name="Column11" Width="26.46"/>
+        <TableColumn Name="Column12" Width="120.96"/>
+        <TableColumn Name="Column13" Width="26.46"/>
+        <TableColumn Name="Column14" Width="26.46"/>
+        <TableColumn Name="Column15" Width="26.46"/>
+        <TableRow Name="Row15">
+          <TableCell Name="Cell71" Text="Разом без ПДВ:" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" ColSpan="2" RowSpan="2"/>
+          <TableCell Name="Cell72" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell73" Text="[sum]" HorzAlign="Right" Font="Arial, 9pt, style=Bold" ColSpan="3" RowSpan="2"/>
+          <TableCell Name="Cell74" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell75" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row16" Height="1">
+          <TableCell Name="Cell76" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell77" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell78" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell79" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell80" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row17">
+          <TableCell Name="Cell81" Text="Без податку (ПДВ)" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" ColSpan="2" RowSpan="2"/>
+          <TableCell Name="Cell82" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell83" Text="-" HorzAlign="Right" Font="Arial, 9pt, style=Bold" ColSpan="3" RowSpan="2"/>
+          <TableCell Name="Cell84" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell85" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row18" Height="1">
+          <TableCell Name="Cell86" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell87" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell88" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell89" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell90" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row19">
+          <TableCell Name="Cell91" Text="Разом з ПДВ:" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold" ColSpan="2"/>
+          <TableCell Name="Cell92" HorzAlign="Right" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell93" Text="[sum]" HorzAlign="Right" Font="Arial, 9pt, style=Bold" ColSpan="3"/>
+          <TableCell Name="Cell94" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+          <TableCell Name="Cell95" HorzAlign="Right" Font="Arial, 9pt, style=Bold"/>
+        </TableRow>
+      </TableObject>
+      <TextObject Name="Text12" Left="37.8" Top="113.4" Width="122.85" Height="18.9" Text="Відвантажив(ла):" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text13" Left="141.75" Top="113.4" Width="198.45" Height="18.9" Border.Lines="Bottom" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text14" Left="378" Top="113.4" Width="122.85" Height="18.9" Text="Отримав(ла):" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text15" Left="463.05" Top="113.4" Width="236.25" Height="18.9" Border.Lines="Bottom" VertAlign="Center" Font="Arial, 9pt, style=Bold"/>
+      <TextObject Name="Text16" Left="378" Top="132.3" Width="122.85" Height="18.9" Text="За довіреністю" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text17" Left="491.4" Top="132.3" Width="37.8" Height="18.9" Text="№" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+      <TextObject Name="Text18" Left="595.35" Top="132.3" Width="37.8" Height="18.9" Text="Від" VertAlign="Center" Font="Arial, 8pt, style=Bold"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

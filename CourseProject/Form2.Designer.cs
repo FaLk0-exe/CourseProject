@@ -105,7 +105,7 @@ namespace CourseProject
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel1.Location = new System.Drawing.Point(93, 134);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(58, 20);
@@ -117,7 +117,7 @@ namespace CourseProject
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel2.ForeColor = System.Drawing.Color.DimGray;
             this.gunaLabel2.Location = new System.Drawing.Point(76, 225);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(81, 20);
@@ -142,8 +142,7 @@ namespace CourseProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::CourseProject.Properties.Resources._3898677;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(264, 415);
             this.Controls.Add(this.gunaLabel2);

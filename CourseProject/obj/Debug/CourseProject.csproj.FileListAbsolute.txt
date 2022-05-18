@@ -23,3 +23,5 @@ C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.OrderListForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.ProductForm.resources
 C:\Users\aprox\source\repos\CourseProject\CourseProject\obj\Debug\CourseProject.SetStatusForm.resources
+C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\FastReport.Bars.dll
+C:\Users\aprox\source\repos\CourseProject\CourseProject\bin\Debug\FastReport.Editor.dll

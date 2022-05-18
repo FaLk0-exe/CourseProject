@@ -41,7 +41,7 @@ namespace CourseProject
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
             this.label1.Location = new System.Drawing.Point(112, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 20);
@@ -61,7 +61,7 @@ namespace CourseProject
             this.authorizationButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.authorizationButton.FocusedColor = System.Drawing.Color.Empty;
             this.authorizationButton.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.authorizationButton.ForeColor = System.Drawing.Color.White;
+            this.authorizationButton.ForeColor = System.Drawing.Color.DimGray;
             this.authorizationButton.Image = null;
             this.authorizationButton.ImageSize = new System.Drawing.Size(20, 20);
             this.authorizationButton.Location = new System.Drawing.Point(109, 147);
@@ -104,7 +104,7 @@ namespace CourseProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CourseProject.Properties.Resources._3898677;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(357, 212);
             this.Controls.Add(this.pictureBox2);

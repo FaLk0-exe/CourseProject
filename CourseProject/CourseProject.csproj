@@ -58,6 +58,10 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FastReport, Version=2013.2.3.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FastReport.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -145,6 +149,7 @@
     <Compile Include="product_category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="ReportModel.cs" />
     <Compile Include="SetStatusForm.cs">
       <SubType>Form</SubType>
     </Compile>
