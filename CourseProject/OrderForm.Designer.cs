@@ -155,7 +155,7 @@ namespace CourseProject
             this.authorizationButton.BorderSize = 3;
             this.authorizationButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.authorizationButton.FocusedColor = System.Drawing.Color.Empty;
-            this.authorizationButton.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.authorizationButton.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.authorizationButton.ForeColor = System.Drawing.Color.White;
             this.authorizationButton.Image = null;
             this.authorizationButton.ImageSize = new System.Drawing.Size(20, 20);
@@ -344,7 +344,7 @@ namespace CourseProject
             this.gunaGradientButton4.BorderSize = 3;
             this.gunaGradientButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaGradientButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton4.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton4.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.gunaGradientButton4.ForeColor = System.Drawing.Color.White;
             this.gunaGradientButton4.Image = null;
             this.gunaGradientButton4.ImageSize = new System.Drawing.Size(20, 20);
@@ -374,7 +374,7 @@ namespace CourseProject
             this.gunaGradientButton3.BorderSize = 3;
             this.gunaGradientButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaGradientButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton3.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.gunaGradientButton3.ForeColor = System.Drawing.Color.White;
             this.gunaGradientButton3.Image = null;
             this.gunaGradientButton3.ImageSize = new System.Drawing.Size(20, 20);
@@ -404,7 +404,7 @@ namespace CourseProject
             this.gunaGradientButton2.BorderSize = 3;
             this.gunaGradientButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaGradientButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton2.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.gunaGradientButton2.ForeColor = System.Drawing.Color.White;
             this.gunaGradientButton2.Image = null;
             this.gunaGradientButton2.ImageSize = new System.Drawing.Size(20, 20);
@@ -434,7 +434,7 @@ namespace CourseProject
             this.gunaGradientButton1.BorderSize = 3;
             this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton1.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaGradientButton1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
             this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
             this.gunaGradientButton1.Image = null;
             this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);

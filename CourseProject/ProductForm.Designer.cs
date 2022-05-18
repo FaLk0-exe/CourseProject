@@ -252,7 +252,7 @@ namespace CourseProject
             this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(175)))), ((int)(((byte)(231)))));
             this.gunaGradientButton1.Size = new System.Drawing.Size(123, 35);
             this.gunaGradientButton1.TabIndex = 5;
-            this.gunaGradientButton1.Text = "Збросити";
+            this.gunaGradientButton1.Text = "Скинути";
             this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGradientButton1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.gunaGradientButton1.Click += new System.EventHandler(this.gunaGradientButton1_Click);
@@ -300,7 +300,7 @@ namespace CourseProject
             this.authorizationButton.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(175)))), ((int)(((byte)(231)))));
             this.authorizationButton.Size = new System.Drawing.Size(123, 35);
             this.authorizationButton.TabIndex = 4;
-            this.authorizationButton.Text = "Примінити";
+            this.authorizationButton.Text = "Застосувати";
             this.authorizationButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.authorizationButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.authorizationButton.Click += new System.EventHandler(this.authorizationButton_Click);

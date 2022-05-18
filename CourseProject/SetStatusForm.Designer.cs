@@ -61,7 +61,7 @@ namespace CourseProject
             this.authorizationButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.authorizationButton.FocusedColor = System.Drawing.Color.Empty;
             this.authorizationButton.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold);
-            this.authorizationButton.ForeColor = System.Drawing.Color.DimGray;
+            this.authorizationButton.ForeColor = System.Drawing.Color.White;
             this.authorizationButton.Image = null;
             this.authorizationButton.ImageSize = new System.Drawing.Size(20, 20);
             this.authorizationButton.Location = new System.Drawing.Point(109, 147);
@@ -74,7 +74,7 @@ namespace CourseProject
             this.authorizationButton.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(175)))), ((int)(((byte)(231)))));
             this.authorizationButton.Size = new System.Drawing.Size(123, 35);
             this.authorizationButton.TabIndex = 5;
-            this.authorizationButton.Text = "Примінити";
+            this.authorizationButton.Text = "Застосувати";
             this.authorizationButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.authorizationButton.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
             this.authorizationButton.Click += new System.EventHandler(this.authorizationButton_Click);
